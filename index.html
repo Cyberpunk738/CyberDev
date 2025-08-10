@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberDev</title>
+    <link rel="icon" href="photo_2025-05-28_22-39-47.jpg" type="image/x-icons">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CyberDev</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-headline">I build clean, modern, and lightning-fast user interfaces.</h1>
+                <p class="hero-subheadline">Frontend Developer | React • JavaScript • Tailwind CSS</p>
+                <button class="cta-button" onclick="scrollToSection('projects')">View Projects</button>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img src="photo_2025-05-28_22-39-47.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">React</span>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="60"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Tailwind CSS</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Next.js</span>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="60"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">TypeScript</span>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="65"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>UI Development</h3>
+                        <p>Creating beautiful and functional user interfaces</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>UI Development</h3>
+                        <p>Transform your ideas into pixel-perfect, responsive interfaces that users love. From wireframes to production-ready components.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Performance Optimization</h3>
+                        <p>Speed up your applications</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Performance Optimization</h3>
+                        <p>Optimize loading times, reduce bundle sizes, and implement best practices for lightning-fast user experiences.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h3>Component Libraries</h3>
+                        <p>Reusable design systems</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Component Libraries</h3>
+                        <p>Build scalable component libraries that maintain consistency across your entire application ecosystem.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-universal-access"></i>
+                        </div>
+                        <h3>Accessibility & SEO</h3>
+                        <p>Inclusive and discoverable</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Accessibility & SEO</h3>
+                        <p>Ensure your applications are accessible to all users and optimized for search engines with semantic HTML and ARIA.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Landing Pages & SaaS UIs</h3>
+                        <p>High-converting interfaces</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Landing Pages & SaaS UIs</h3>
+                        <p>Design and develop landing pages and SaaS interfaces that convert visitors into customers with compelling UX.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3>API Integration</h3>
+                        <p>Seamless data flow</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>API Integration</h3>
+                        <p>Integrate third-party APIs and build custom endpoints to create dynamic, data-driven applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="saas">SaaS</button>
+                <button class="filter-btn" data-filter="ui">UI</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="asset/AI chat box.png" alt="" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chatbox</h3>
+                        <p class="project-tech">HTML • CSS • JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://ai-chatbox-a2rp-d6edut13x-afeezs-projects-010ed076.vercel.app/" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/Cyberpunk738/AI-chatbox.git" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ui">
+                    <div class="project-image">
+                        <img src="asset/AI image generator.png" alt="" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Image Generator</h3>
+                        <p class="project-tech">HTML • CSS • JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://ai-image-generator-ten-silk.vercel.app/" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/Cyberpunk738/AI-image-generator.git" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="saas">
+                    <div class="project-image">
+                        <img src="asset/cluster.png" alt="" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>Business Finance Website</h3>
+                        <p class="project-tech">Webflow • Styled Components</p>
+                        <div class="project-buttons">
+                            <a href="https://afeezs-marvelous-site-e996ad.webflow.io/" class="project-btn">Live Demo</a>
+                            <a href="#" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="saas">
+                    <div class="project-image">
+                        <img src="asset/Bola Brand.png" alt="" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Fashion Store</h3>
+                        <p class="project-tech">HTML5 • CSS3 • JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://bola-brand.vercel.app/" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/Cyberpunk738/bola-brand.git" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ui">
+                    <div class="project-image">
+                        <img src="asset/Zeal web agency.png" alt="" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>Zeal Business Agency</h3>
+                        <p class="project-tech">Webflow • Styled Components</p>
+                        <div class="project-buttons">
+                            <a href="https://afeezs-awesome-site.webflow.io/" class="project-btn">Live Demo</a>
+                            <a href="#" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="asset/Screenshot (159).png" alt="" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>Qr Barcode Generator</h3>
+                        <p class="project-tech">HTML5 • CSS3 • JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://qr-code-generator-smoky-kappa-62.vercel.app/" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/Cyberpunk738/qr-code-generator.git" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p>Hey there! I'm a passionate frontend developer who loves turning complex problems into simple, beautiful, and intuitive designs.</p>
+                    <p>My journey in web development started with curiosity and has evolved into a deep passion for creating user experiences that matter. I specialize in React, JavaScript, and modern CSS frameworks.</p>
+                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                    <div class="currently-learning">
+                        <h4>Currently Learning:</h4>
+                        <p>Advanced TypeScript patterns and Three.js for 3D web experiences</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-avatar">
+                        <img src="photo_2025-05-28_22-39-47.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with this developer was an absolute pleasure. The attention to detail and commitment to quality is outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Product Manager, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The performance improvements they implemented were incredible. Our app now loads 3x faster!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Mike Chen</h4>
+                            <p>CTO, StartupXYZ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Exceptional communication and technical skills. Delivered exactly what we envisioned and more."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Design Lead, CreativeStudio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Cyberpunk738" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="suleafeezademola@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://x.com/AfeezSule35391" class="social-icon">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Afeez Ademola Sule | Frontend Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
