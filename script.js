@@ -314,33 +314,59 @@ function initializeScrollIndicator() {
     }
 }
 
+
+// Form Submission
 // Form Submission
 function handleFormSubmission(e) {
     e.preventDefault();
-    
+
     if (validateForm()) {
-        // Simulate form submission
+        const contactForm = e.target; // the form
         const submitBtn = document.querySelector('.submit-btn');
         const originalText = submitBtn.textContent;
-        
+
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
-        
-        setTimeout(() => {
-            submitBtn.textContent = 'Message Sent!';
-            submitBtn.style.background = '#10B981';
-            
-            // Reset form
-            contactForm.reset();
-            
+
+        // Send data to Formspree
+        fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                submitBtn.textContent = 'Message Sent!';
+                submitBtn.style.background = '#10B981';
+                contactForm.reset();
+
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = '';
+                }, 2000);
+            } else {
+                return response.json().then(data => {
+                    throw new Error(data.error || 'Something went wrong.');
+                });
+            }
+        })
+        .catch(error => {
+            submitBtn.textContent = 'Error!';
+            submitBtn.style.background = 'red';
+            console.error(error);
+
             setTimeout(() => {
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
                 submitBtn.style.background = '';
             }, 2000);
-        }, 1500);
+        });
     }
 }
+
 
 // Parallax Effect for Hero Section
 function initializeParallax() {
