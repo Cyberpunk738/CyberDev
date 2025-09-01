@@ -140,7 +140,7 @@ The color scheme is defined using CSS variables in `styles.css`:
 ```html
 <div class="project-card" data-category="web">
     <div class="project-image">
-        <i class="fas fa-project-icon"></i>
+        <img src"" alt"" >
     </div>
     <div class="project-content">
         <h3>Project Name</h3>
@@ -187,5 +187,6 @@ Feel free to fork this project and customize it for your own portfolio. If you f
 If you need help customizing this portfolio or have questions about the implementation, feel free to reach out!
 
 ---
+
 
 **Built with ❤️ using HTML, CSS, and JavaScript** 
