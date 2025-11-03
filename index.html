@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfeezDev</title>
+    <meta name="description" content="AfeezDev – Frontend Developer portfolio. I build clean, modern, lightning-fast user interfaces. Explore projects, services, tech stack, testimonials, and contact details.">
+    <link rel="canonical" href="https://your-domain.com/">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#3B82F6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:title" content="AfeezDev – Frontend Developer Portfolio">
+    <meta property="og:description" content="I build clean, modern, and lightning-fast user interfaces. Projects, services, tech stack, testimonials, and contact.">
+    <meta property="og:image" content="https://your-domain.com/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://your-domain.com/">
+    <meta name="twitter:title" content="AfeezDev – Frontend Developer Portfolio">
+    <meta name="twitter:description" content="I build clean, modern, and lightning-fast user interfaces. Projects, services, tech stack, testimonials, and contact.">
+    <meta name="twitter:image" content="https://your-domain.com/og-image.jpg">
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" href="photo_2025-05-28_22-39-47.jpg" type="image/x-icons">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://your-domain.com/",
+      "name": "AfeezDev – Frontend Developer Portfolio",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://your-domain.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Afeez Ademola Sule",
+      "jobTitle": "Frontend Developer",
+      "url": "https://your-domain.com/",
+      "sameAs": [
+        "https://www.linkedin.com/in/your-profile",
+        "https://github.com/Cyberpunk738",
+        "https://x.com/AfeezSule35391"
+      ]
+    }
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Primary">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AfeezDev</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-headline">I build modern, client-focused websites designed to grow your business .</h1>
+                <p class="hero-subheadline">Frontend Developer | Website Developer | React • JavaScript • Tailwind CSS</p>
+                <button class="cta-button" onclick="scrollToSection('projects')">View Projects</button>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img src="photo_2025-05-28_22-39-47.jpg" alt="Developer portrait" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-icons-grid">
+                <div class="tech-icon-card" aria-label="HTML5">
+                    <i class='bx bxl-html5'></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-icon-card" aria-label="CSS3">
+                    <i class='bx bxl-css3'></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-icon-card" aria-label="JavaScript">
+                    <i class='bx bxl-javascript'></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-icon-card" aria-label="React">
+                    <i class='bx bxl-react'></i>
+                    <span>React</span>
+                </div>
+                <div class="tech-icon-card" aria-label="Tailwind CSS">
+                    <i class='bx bxl-tailwind-css'></i>
+                    <span>Tailwind CSS</span>
+                </div>
+                <div class="tech-icon-card" aria-label="TypeScript">
+                    <i class='bx bxl-typescript'></i>
+                    <span>TypeScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Website Landing Pages & SaaS UIs</h3>
+                        <p>High-converting interfaces</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Landing Pages & SaaS UIs</h3>
+                        <p>Design and develop landing pages and SaaS interfaces that convert visitors into customers with compelling UX.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>UI Development</h3>
+                        <p>Creating beautiful and functional user interfaces</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>UI Development</h3>
+                        <p>Transform your ideas into pixel-perfect, responsive interfaces that users love. From wireframes to production-ready components.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Performance Optimization</h3>
+                        <p>Speed up your applications</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Performance Optimization</h3>
+                        <p>Optimize loading times, reduce bundle sizes, and implement best practices for lightning-fast user experiences.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h3>Component Libraries</h3>
+                        <p>Reusable design systems</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Component Libraries</h3>
+                        <p>Build scalable component libraries that maintain consistency across your entire application ecosystem.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-universal-access"></i>
+                        </div>
+                        <h3>Accessibility & SEO</h3>
+                        <p>Inclusive and discoverable</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Accessibility & SEO</h3>
+                        <p>Ensure your applications are accessible to all users and optimized for search engines with semantic HTML and ARIA.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <div class="service-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3>API Integration</h3>
+                        <p>Seamless data flow</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>API Integration</h3>
+                        <p>Integrate third-party APIs and build custom endpoints to create dynamic, data-driven applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="saas">SaaS</button>
+                <button class="filter-btn" data-filter="ui">UI</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="asset/Gado img.png" alt="Gado - Inheritance Platform Website screenshot" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>Gado - An Inheritance Platform Website</h3>
+                        <p class="project-tech">React • JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://gadot.netlify.app/" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/Cyberpunk738/" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ui">
+                    <div class="project-image">
+                        <img src="asset/aj clean.png" alt="AJ Cleaning Website screenshot" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>AJ Cleaning Website</h3>
+                        <p class="project-tech">HTML • CSS • JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://aj-clean.vercel.app/" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/Cyberpunk738/aj-clean.git" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="saas">
+                    <div class="project-image">
+                        <img src="asset/cluster.png" alt="Business Finance Website screenshot" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>Business Finance Website</h3>
+                        <p class="project-tech">Webflow • Styled Components</p>
+                        <div class="project-buttons">
+                            <a href="https://afeezs-marvelous-site-e996ad.webflow.io/" class="project-btn">Live Demo</a>
+                            <a href="#" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="saas">
+                    <div class="project-image">
+                        <img src="asset/hinvbeqcm2ykszie0ksx.webp" alt="E-commerce Fashion Store screenshot" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Fashion Store</h3>
+                        <p class="project-tech">HTML5 • CSS3 • JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://bola-brand.vercel.app/" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/Cyberpunk738/bola-brand.git" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ui">
+                    <div class="project-image">
+                        <img src="asset/tasklynimg.webp" alt="Tasklyn Web3 Landing Page screenshot" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>Tasklyn Web3 Landing Page</h3>
+                        <p class="project-tech">Html • JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://tasklyn.vercel.app" class="project-btn">Live Demo</a>
+                            <a href="#" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="asset/Zeal web agency.png" alt="Zeal Business Agency website screenshot" srcset="">
+                    </div>
+                    <div class="project-content">
+                        <h3>Zeal Business Agency</h3>
+                        <p class="project-tech">HTML5 • CSS3 • JavaScript</p>
+                        <div class="project-buttons">
+                            <a href="https://afeezs-awesome-site.webflow.io//" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/Cyberpunk738/" class="project-btn">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p>Hey there! I'm a passionate frontend developer who loves turning complex problems into simple, beautiful, and intuitive designs.</p>
+                    <p>My journey in web development started with curiosity and has evolved into a deep passion for creating user experiences that matter. I specialize in React, JavaScript, and modern CSS frameworks.</p>
+                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                    <div class="currently-learning">
+                        <h4>Currently Learning:</h4>
+                        <p>Advanced TypeScript patterns and Three.js for 3D web experiences</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-avatar">
+                        <img src="photo_2025-05-28_22-39-47.jpg" alt="Developer profile avatar" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with this developer was an absolute pleasure. The attention to detail and commitment to quality is outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Product Manager, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The performance improvements they implemented were incredible. Our app now loads 3x faster!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Mike Chen</h4>
+                            <p>CTO, StartupXYZ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Exceptional communication and technical skills. Delivered exactly what we envisioned and more."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Design Lead, CreativeStudio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <form action="https://formspree.io/f/mdklknjy"  method="post" class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="LinkedIn" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Cyberpunk738" class="social-icon" aria-label="GitHub" rel="noopener noreferrer" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="suleafeezademola@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://x.com/AfeezSule35391" class="social-icon" aria-label="Twitter" rel="noopener noreferrer" target="_blank">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Afeez Ademola Sule | Frontend Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
