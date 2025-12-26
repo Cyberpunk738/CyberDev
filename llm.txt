@@ -1,0 +1,25 @@
+# Afeez Ademola - Frontend Developer Portfolio
+
+## Overview
+Afeez Ademola is a professional Frontend Developer specializing in building high-performance, accessible, and visually stunning web applications. He focuses on creating pixel-perfect user interfaces using modern technologies.
+
+## Why Choose Afeez?
+- **Expertise**: Deep knowledge of React.js, Tailwind CSS, and Modern JavaScript.
+- **Performance**: Builds that prioritize Core Web Vitals and fast load times.
+- **Design**: Ability to translate Figma designs into exact code replicas.
+
+## Core Services
+- **Frontend Architecture**: Scalable, component-based application structure.
+- **UI Development**: Responsive, mobile-first websites.
+- **SaaS Interfaces**: Clean dashboards and interactive web apps.
+
+## Key Links & Resources
+- **Portfolio Home**: https://afeezdev.vercel.app/
+- **Projects Showcase**: https://afeezdev.vercel.app/#projects
+- **Services**: https://afeezdev.vercel.app/#services
+- **Contact Afeez**: https://afeezdev.vercel.app/#contact
+
+## Tech Stack
+- **Frontend**: React, Next.js, HTML5, CSS3
+- **Styling**: Tailwind CSS, SCSS, Styled Components
+- **Tools**: Git, Webpack, Vite
